@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Ambiental</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #eaf7ec;
+      color: #2c3e50;
+    }
+
+    header{
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://i.pinimg.com/736x/e4/9f/6a/e49f6afe811e7a4973ff9884bc0cd5d6.jpg") center/cover no-repeat;
+      padding: 150px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1{
+      font-size: 60px;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    header p{
+      font-size: 22px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav{
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a{
+      margin: 0 25px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #2c3e50;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a:hover{
+      color: #27ae60;
+    }
+
+    nav a::after{
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: #27ae60;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transform: scaleX(0);
+      transition: 0.3s;
+    }
+
+    nav a:hover::after{
+      transform: scaleX(1);
+    }
+
+    section{
+      padding: 80px 30px;
+      text-align: center;
+    }
+
+    h2{
+      font-size: 40px;
+      color: #27ae60;
+      font-weight: 800;
+    }
+
+    .contenedor-botones{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    .btn{
+      display: block;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .btn:hover{
+      background: #dff7e3;
+      transform: translateY(-5px);
+    }
+
+    footer{
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    footer strong{
+      color: #7ceda9;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <h1>Proyecto Ambiental</h1>
+  <p>Explora cada sección y descubre cómo mejorar el manejo de los residuos en nuestra comunidad.</p>
+</header>
+
+<nav>
+  <a href="objetivo.html">Objetivo Principal</a>
+  <a href="importancia.html">Importancia</a>
+  <a href="lugares.html">Lugares Afectados</a>
+  <a href="soluciones.html">Soluciones</a>
+</nav>
+
+<section>
+  <h2>Secciones Disponibles</h2>
+
+  <div class="contenedor-botones">
+    <a class="btn" href="objetivo.html">🎯 Objetivo Principal</a>
+    <a class="btn" href="importancia.html">⭐ Importancia</a>
+    <a class="btn" href="lugares.html">📍 Lugares Afectados</a>
+    <a class="btn" href="soluciones.html">💡 Soluciones</a>
+  </div>
+</section>
+
+<footer>
+  Página creada por <strong>Adonys y Alexis</strong> — 2025
+</footer>
+
+</body>
+</html>
